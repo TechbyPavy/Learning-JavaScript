@@ -1,4 +1,4 @@
-# Pokedex App — React Native + Expo
+# Pokedex App — React Native + Expo, by tutorial
 
 This project was developed as part of my learning journey in mobile development.  
 I followed the tutorial **“React Native for Dummies 2026 – Full Beginner Crash Course”** and added my own improvements and modifications along the way.
@@ -50,7 +50,7 @@ Throughout the development, I practiced:
 
 ## Screenshots
 ![Home](images/Screenshot_2026-05-03-12-43-18-86_f73b71075b1de7323614b647fe394240.jpg)
-![Details from each pokemon](<images/Captura de ecrã 2026-05-03 125554.png>)
+![Details from each pokemon](imagesScreenshot_2026-05-03-12-43-36-71_f73b71075b1de7323614b647fe394240.jpg)
 
 ---
 
