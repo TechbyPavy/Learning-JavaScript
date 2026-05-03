@@ -50,7 +50,7 @@ Throughout the development, I practiced:
 
 ## Screenshots
 ![Home](images/Screenshot_2026-05-03-12-43-18-86_f73b71075b1de7323614b647fe394240.jpg)
-![Details from each pokemon](imagesScreenshot_2026-05-03-12-43-36-71_f73b71075b1de7323614b647fe394240.jpg)
+![Details from each pokemon](images/Screenshot_2026-05-03-12-43-36-71_f73b71075b1de7323614b647fe394240.jpg)
 
 ---
 
