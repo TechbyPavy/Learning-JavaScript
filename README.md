@@ -1,6 +1,6 @@
 # Pokedex App — React Native + Expo, by tutorial
 
-This project was developed as part of my learning journey in mobile development.  
+This project was developed as part of my learning journey in mobile development😁.  
 I followed the tutorial **“React Native for Dummies 2026 – Full Beginner Crash Course”** and added my own improvements and modifications along the way.
 
 ---
