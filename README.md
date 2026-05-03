@@ -42,22 +42,24 @@ Throughout the development, I practiced:
 ---
 
 ## How to Run
-1. Install dependencies:
-2. Start the project:
+1. Install dependencies: npm install.
+2. Start the project: npx expo start or npm run start.
 3. Scan the QR Code using **Expo Go** on your phone.
 
 ---
 
 ## Screenshots
-(Add your app screenshots here if you want)
+![Home](images/Screenshot_2026-05-03-12-43-18-86_f73b71075b1de7323614b647fe394240.jpg)
+![Details from each pokemon](<images/Captura de ecrã 2026-05-03 125554.png>)
 
 ---
 
-## Tutorial Reference
+## Credits Tutorial Reference 
 Base tutorial: *React Native for Dummies 2026 – Full Beginner Crash Course*  
-YouTube link: [Insert tutorial link here]
+YouTube link: [https://www.youtube.com/watch?v=BUXnASp_WyQ] by **Code with Beto**. 
 
-This project soon will have personal modifications and additional code written by me.
+
+This project soon will have more personal modifications and additional code written by me.
 
 
 
