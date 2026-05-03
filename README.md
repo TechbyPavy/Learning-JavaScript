@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# Pokedex App — React Native + Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project was developed as part of my learning journey in mobile development.  
+I followed the tutorial **“React Native for Dummies 2026 – Full Beginner Crash Course”** and added my own improvements and modifications along the way.
 
-## Get started
+---
 
-1. Install dependencies
+## Technologies Used
+- React Native
+- Expo & Expo Go
+- TypeScript
+- Node.js
+- TSX Components
+- API Consumption (JSON)
+- Hooks (useState, useEffect)
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## Project Goal
+Build a simple mobile application that lists Pokémon using the public **PokeAPI**, displaying their name, type, and images.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## What I Learned
+Throughout the development, I practiced:
+- Structuring React Native projects with Expo  
+- Fetching external data  
+- Rendering lists  
+- Styling with `StyleSheet`  
+- Navigation between screens  
+- Component organization  
+- TypeScript typing  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Personal Improvements Added
+- Layout and color adjustments  
+- Additional comments  
+- Component reorganization  
+- Experiments with new features  
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## How to Run
+1. Install dependencies:
+2. Start the project:
+3. Scan the QR Code using **Expo Go** on your phone.
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Screenshots
+(Add your app screenshots here if you want)
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## Tutorial Reference
+Base tutorial: *React Native for Dummies 2026 – Full Beginner Crash Course*  
+YouTube link: [Insert tutorial link here]
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This project soon will have personal modifications and additional code written by me.
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
