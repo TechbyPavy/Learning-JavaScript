@@ -1,5 +1,6 @@
+import { Link } from "expo-router";
 import { useEffect, useState } from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, ScrollView, Pressable, Text, View, StyleSheet } from "react-native";
 
 // Define the type for a Pokemon, it will have a name, an image and a back image
 interface Pokemon {
@@ -16,6 +17,16 @@ interface PokemonType {
   }
 }
 
+const colorByType = {
+  // @ts-ignore
+  grass: "#C6E0C3",
+  fire: "#FFDBBB",
+  water: "lightblue",
+  bug: "#F3CEFF",
+  normal:"lightyellow",
+};
+
+
 // This is the main component of the app, it will fetch pokemons from the pokeapi and display them in a scrollable list
 export default function Index() {
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
@@ -29,7 +40,7 @@ export default function Index() {
   // Use this function to fetch pokemons from the pokeapi
   async function fetchPokemons() {
     try {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=10");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=20");
       const data = await response.json();
 
       // The pokeapi returns a list of pokemons with their name and url, we need to fetch the details of each pokemon to get their image
@@ -54,12 +65,26 @@ export default function Index() {
   
   // Call the function to fetch pokemons when the component gets mounted
   return (
-    <ScrollView>
+    <ScrollView
+      contentContainerStyle={{
+        gap: 16,
+        padding: 16,
+      }}
+    >
       {pokemons.map((pokemon) => (
-        <View key={pokemon.name}> 
-          <Text>{pokemon.name}</Text>
-          <Text>{pokemon.types[0].type.name}</Text>
-
+        <Link 
+          key={pokemon.name} 
+          href={{ pathname: "/details", params: { name: pokemon.name } }}
+          style={{
+            //@ts-ignore
+            backgroundColor: colorByType[pokemon.types[0].type.name as keyof typeof colorByType] || "pink",
+            padding: 20,
+            borderRadius: 20,
+          }}
+        >
+          <View>
+            <Text style={styles.name}>{pokemon.name}</Text>
+            <Text style={styles.type}>{pokemon.types[0].type.name}</Text>
 
           <View 
             style={{ 
@@ -73,7 +98,23 @@ export default function Index() {
                 style={{ width: 150, height: 150 }} />
           </View>
         </View>
+        </Link>
       ))}
     </ScrollView>
   );
 }
+
+
+const styles = StyleSheet.create({
+  name: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  type: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'grey',
+    textAlign: 'center',
+  },
+});
